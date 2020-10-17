@@ -2,3 +2,7 @@
   display: block;
   background-color: lightblue;
 }
+
+.score {
+  float: right;
+}
