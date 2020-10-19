@@ -32,8 +32,3 @@ function scoresSorted(array, key) {
     return -1;
   });
 }
-
-clearHighScore.addEventListener("click", function () {
-  localStorage.removeItem("highscores");
-  window.location.reload();
-});
