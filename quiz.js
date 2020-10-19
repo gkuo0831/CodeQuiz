@@ -60,4 +60,7 @@ function firstQuestion() {
 var quizBtn = document.querySelectorAll(".quizBtn");
 
 for (var i = 0; i < quizBtn.length; i++) {
-    quizBtn[i].addEventListener("click", function userAnswer(event) {}
+    quizBtn[i].addEventListener("click", function userAnswer(event) {
+        if (event.currentTarget.innerText === questions[runningQuestion].correct){
+            correctAnswer.textContent = "Correct + 5 sec";
+    }
