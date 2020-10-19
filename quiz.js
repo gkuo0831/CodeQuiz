@@ -139,4 +139,6 @@ submitButton.addEventListener("click", function (event) {
   var finalScore = { initials, secondsLeft };
   console.log("Final Score + finalScore");
   console.log(initials + "Score is:" + secondsLeft);
+
+  highscores.push(finalScore);
 });
