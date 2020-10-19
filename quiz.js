@@ -36,23 +36,10 @@ var back = document.getElementById("back");
 
 //Creating start button
 startBtn.addEventListener("click", startQuiz);
-//back.addEventListener("click");
-
-let pagearray = [startquiz, questionpage, finalscore];
-
-function hide() {
-  for (let i = 0; i < pagearray.length; i++) {
-    console.log(pagearray[i]);
-    if (!pagearray[i].classList.contains("hide")) {
-      pagearray[i].classList.add("hide");
-    }
-  }
-}
-
 function startQuiz() {
-  console.log("Welcome");
-
-  hide();
+  setTime();
+  firstQuestion();
+  console.log("starting quiz");
 }
 
 //same function for timer^
