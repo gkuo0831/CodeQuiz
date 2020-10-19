@@ -134,4 +134,9 @@ var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 submitButton.addEventListener("click", function (event) {
   event.stopPropagation();
   console.log("click");
+
+  var initials = inputLine.value;
+  var finalScore = { initials, secondsLeft };
+  console.log("Final Score + finalScore");
+  console.log(initials + "Score is:" + secondsLeft);
 });
