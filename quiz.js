@@ -3,7 +3,7 @@
 var questionsContainer = [
   (question1 = {
     question: "What is the slowest animal in the world?",
-    correctAnsw1: "Three-toed Sloth",
+    correctAnsw: "Three-toed Sloth",
     answer1: "Three-toes Sloth",
     answer2: "Snail",
     answer3: "Tortoise",
@@ -11,29 +11,35 @@ var questionsContainer = [
   }),
   (question2 = {
     question: "A group of lions is known as?",
-    correctAnsw2: "A pride",
+    correctAnsw: "A pride",
     answer1: "A swarm",
     answer2: "A group",
-    answer3: "A gang";
-    answer4: "a herd"
+    answer3: "A gang",
+    answer4: "a herd",
   }),
   (question3 = {
     question: "Which animal never sleeps?",
-    correctAnsw3: "Bullfrog",
+    correctAnsw: "Bullfrog",
     answer1: "Fish",
     answer2: "Bullfrog",
     answer3: "Lizard",
-    answer4: "Whale"
+    answer4: "Whale",
   }),
   (question4 = {
     question: "Whats the fastest animal on earth?",
-    correctAnsw4: "Cheetah",
+    correctAnsw: "Cheetah",
     answer1: "Wolf",
     answer2: "Lepord",
     answer3: "Cheetah",
-    answer4: "Usain Bolt"
+    answer4: "Usain Bolt",
   }),
 ];
+
+//timer
+var time = document.getElementById("timer");
+var yourScore = document.querySelector(".display");
+var submitButton = document.getElementById("buttonInitials");
+var inputLine = document.getElementById("inlineFormInput");
 
 //Creating start button
 var startButton = document.getElementById("startQuiz");
@@ -73,7 +79,9 @@ var quizBtn = document.querySelectorAll(".quizBtn");
 
 for (var i = 0; i < quizBtn.length; i++) {
   quizBtn[i].addEventListener("click", function userAnswer(event) {
-    if (event.currentTarget.innerText === questions[currentQuestion].correct) {
+    if (
+      event.currentTarget.innerText === questions[currentQuestion].correctAnsw
+    ) {
       correctAnswer.textContent = "Correct + 5 sec";
       correctAnswer.setAttribute("style", "color: pink");
       secondsLeft = secondsLeft + 5;
