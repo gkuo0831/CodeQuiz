@@ -60,16 +60,23 @@ function firstQuestion() {
 var quizBtn = document.querySelectorAll(".quizBtn");
 
 for (var i = 0; i < quizBtn.length; i++) {
-    quizBtn[i].addEventListener("click", function userAnswer(event) {
-        if (event.currentTarget.innerText === questions[currentQuestion].correct){
-            correctAnswer.textContent = "Correct + 5 sec";
-            correctAnswer.setAttribute("style", "color: pink");
-    secondsLeft = secondsLeft + 5;
-    console.log("correct");
+  quizBtn[i].addEventListener("click", function userAnswer(event) {
+    if (event.currentTarget.innerText === questions[currentQuestion].correct) {
+      correctAnswer.textContent = "Correct + 5 sec";
+      correctAnswer.setAttribute("style", "color: pink");
+      secondsLeft = secondsLeft + 5;
+      console.log("correct");
     } else {
-        incorrectAnswer.textContent = "Incorrect - 5 sec";
-        incorrectAnswer.setAttribute("style", "color: red");
-        secondsLeft = secondsLeft - 5;
-        console.log("Incorrect minus 5 seconds");
-      
+      incorrectAnswer.textContent = "Incorrect - 5 sec";
+      incorrectAnswer.setAttribute("style", "color: red");
+      secondsLeft = secondsLeft - 5;
+      console.log("Incorrect minus 5 seconds");
     }
+    console.log(currentQuestion);
+    currentQuestion++;
+
+    if (currentQuestion < 5) {
+      firstQuestion();
+    }
+  });
+}
