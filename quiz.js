@@ -59,22 +59,5 @@ function firstQuestion() {
 }
 var quizBtn = document.querySelectorAll(".quizBtn");
 
-//same function for timer^
-//create variables for state of true or false
-//lettimer = 90s
-//let secondleft; -- once they choose the wrong answer secondleft--;
-//let numberCorrect
-// let numberIncorrect;
-//let finalScore=0;
-//let questionIndex;
-
-//function randomizes question array
-//iside create empty question array to push the shuufled original array
-
-//startquiz functiion start()
-//numberCorrect=0
-//numberIncorrect=0
-
-//hide() function is called
-
-//in arrayshuffle: use math.random or do directly
+for (var i = 0; i < quizBtn.length; i++) {
+    quizBtn[i].addEventListener("click", function userAnswer(event) {}
