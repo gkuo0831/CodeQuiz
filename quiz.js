@@ -43,19 +43,30 @@ var inputLine = document.getElementById("inlineFormInput");
 
 var secondsLeft = 60;
 function setTime() {
-    var timerInterval = setInterval(function() {
-      secondsLeft--;
+  var timerInterval = setInterval(function () {
+    secondsLeft--;
+    console.log(secondsLeft);
+    time.textContent = "Time: " + secondsLeft;
+    if (secondsLeft === 0) {
+      clearInterval(timerInterval);
+      cardQuestions.setAttribute("style", "display: none");
+      displayJumbo.setAttribute("style", "display: block");
+      yourScore.textContent = "Your score is: " + secondsLeft;
+      startButton.setAttribute("style", "display: none");
+      submitButton.setAttribute("style", "display: inline");
+      inputLine.setAttribute("style", "display: inline-block");
+    } else if (currentQuestion === 5) {
+      clearInterval(timerInterval);
       console.log(secondsLeft);
-        time.textContent = "Time: " + secondsLeft;
-        if(secondsLeft === 0) {
-            clearInterval(timerInterval);
-            cardQuestions.setAttribute("style", "display: none");
-            displayJumbo.setAttribute("style", "display: block");
-            yourScore.textContent = "Your score is: " + secondsLeft;
-            startButton.setAttribute("style", "display: none");
-            submitButton.setAttribute("style", "display: inline");
-            inputLine.setAttribute("style", "display: inline-block");
-      
+      cardQuestions.setAttribute("style", "display: none");
+      displayJumbo.setAttribute("style", "display: block");
+      yourScore.textContent = "Your score is: " + secondsLeft;
+      startButton.setAttribute("style", "display: none");
+      submitButton.setAttribute("style", "display: inline");
+      inputLine.setAttribute("style", "display: inline-block");
+    }
+  }, 1000);
+}
 
 //Creating start button
 var startButton = document.getElementById("startQuiz");
