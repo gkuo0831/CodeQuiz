@@ -2,7 +2,7 @@
 
 var questionsContainer = [
   (question1 = {
-    question: "Where does Grace live?",
+    question: "What is the slowest animal in the world?",
     correctAnsw: "USA",
     answerArray: ["USA", "UK", "Italy", "Lapland"],
   }),
