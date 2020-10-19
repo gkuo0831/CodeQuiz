@@ -34,6 +34,7 @@ var answers = document.getElementById("answers");
 var finalscore = document.getElementById("finalscore");
 var back = document.getElementById("back");
 
+//Creating start button
 startBtn.addEventListener("click", startQuiz);
 //back.addEventListener("click");
 
