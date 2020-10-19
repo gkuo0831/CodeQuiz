@@ -3,23 +3,23 @@
 var questionsContainer = [
   (question1 = {
     question: "What is the slowest animal in the world?",
-    correctAnsw: "USA",
-    answerArray: ["USA", "UK", "Italy", "Lapland"],
+    correctAnsw: "Three-toed Sloth",
+    answerArray: ["Three-toed Sloth", "Snail", "Tortoise", "Starfish"],
   }),
   (question2 = {
-    question: "Where does Grace live?",
-    correctAnsw: "USA",
-    answerArray: ["USA", "UK", "Italy", "Lapland"],
+    question: "A group of lions is known as?",
+    correctAnsw: "A pride",
+    answerArray: ["A swarm", "A group", "A gang", "A herd"],
   }),
   (question3 = {
-    question: "Where does Grace live?",
-    correctAnsw: "USA",
-    answerArray: ["USA", "UK", "Italy", "Lapland"],
+    question: "Which animal never sleeps?",
+    correctAnsw: "Bullfrog",
+    answerArray: ["Fish", "Bullfrog", "Lizard", "Whale"],
   }),
   (question4 = {
-    question: "Where does Grace live?",
-    correctAnsw: "USA",
-    answerArray: ["USA", "UK", "Italy", "Lapland"],
+    question: "Whats the fastest animal on earth?",
+    correctAnsw: "Cheetah",
+    answerArray: ["Wolf", "Lepord", "Cheetah", "Usain Bolt"],
   }),
 ];
 
