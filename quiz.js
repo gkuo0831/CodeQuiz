@@ -96,7 +96,7 @@ var currentQuestion = 0;
 //question function:
 function firstQuestion() {
   var quest = questions[currentQuestion];
-  question.textContent = quest.question;
+  questions.textContent = quest.questions;
   answer1.textContent = quest.answer1;
   answer2.textContent = quest.answer2;
   answer3.textContent = quest.answer3;
