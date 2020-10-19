@@ -23,23 +23,23 @@ var questionsContainer = [
   }),
 ];
 
-var highScore = [];
-var scores = document.getElementById("scores");
-var timer = document.getElementById("timer");
-var startquiz = document.getElementById("start-quiz");
-var startBtn = document.getElementById("start-btn");
-var questions = document.getElementById("questions");
-var questionpage = document.getElementById("question-page");
-var answers = document.getElementById("answers");
-var finalscore = document.getElementById("finalscore");
-var back = document.getElementById("back");
+var answer1 = document.getElementById("button1");
+var answer2 = document.getElementById("button2");
+var answer3 = document.getElementById("button3");
+var answer4 = document.getElementById("button4");
+var question = document.getElementById("questions");
+var correctAnswer = document.getElementById("correct-Incorrect");
+var incorrectAnswer = document.getElementById("correct-Incorrect");
 
 //Creating start button
+
 startBtn.addEventListener("click", startQuiz);
 function startQuiz() {
   setTime();
   firstQuestion();
   console.log("starting quiz");
+  cardQuestions.setAttribute("style", "display:block");
+  displayJumbo.setAttribute("style", "display: none");
 }
 
 //same function for timer^
