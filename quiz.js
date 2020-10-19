@@ -47,6 +47,14 @@ function setTime() {
       secondsLeft--;
       console.log(secondsLeft);
         time.textContent = "Time: " + secondsLeft;
+        if(secondsLeft === 0) {
+            clearInterval(timerInterval);
+            cardQuestions.setAttribute("style", "display: none");
+            displayJumbo.setAttribute("style", "display: block");
+            yourScore.textContent = "Your score is: " + secondsLeft;
+            startButton.setAttribute("style", "display: none");
+            submitButton.setAttribute("style", "display: inline");
+            inputLine.setAttribute("style", "display: inline-block");
       
 
 //Creating start button
