@@ -23,15 +23,10 @@ var questionsContainer = [
   }),
 ];
 
-var answer1 = document.getElementById("button1");
-var answer2 = document.getElementById("button2");
-var answer3 = document.getElementById("button3");
-var answer4 = document.getElementById("button4");
-var question = document.getElementById("questions");
-var correctAnswer = document.getElementById("correct-Incorrect");
-var incorrectAnswer = document.getElementById("correct-Incorrect");
-
 //Creating start button
+var startButton = document.getElementById("startQuiz");
+var cardQuestions = document.getElementById("questionsCard");
+var displayJumbo = document.querySelector(".jumbotron");
 
 startBtn.addEventListener("click", startQuiz);
 function startQuiz() {
@@ -40,6 +35,26 @@ function startQuiz() {
   console.log("starting quiz");
   cardQuestions.setAttribute("style", "display:block");
   displayJumbo.setAttribute("style", "display: none");
+}
+
+//question variables
+
+var answer1 = document.getElementById("button1");
+var answer2 = document.getElementById("button2");
+var answer3 = document.getElementById("button3");
+var answer4 = document.getElementById("button4");
+var question = document.getElementById("questions");
+var correctAnswer = document.getElementById("correct-Incorrect");
+var incorrectAnswer = document.getElementById("correct-Incorrect");
+
+//question function:
+function firstQuestion() {
+  var quest = questions[runningQuestion];
+  question.textContent = quest.question;
+  answer1.textContent = quest.answer1;
+  answer2.textContent = quest.answer2;
+  answer3.textContent = quest.answer3;
+  answer4.textContent = quest.answer4;
 }
 
 //same function for timer^
