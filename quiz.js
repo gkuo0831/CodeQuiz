@@ -130,3 +130,5 @@ for (var i = 0; i < quizBtn.length; i++) {
 
 // creating Highscores:
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+
+submitButton.addEventListener("click", function (event) {});
