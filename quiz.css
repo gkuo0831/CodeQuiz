@@ -53,3 +53,26 @@ body {
 #correctIncorrect {
   font-size: xx-large;
 }
+
+#buttonInitials {
+  display: none;
+}
+
+#inlineFormInput {
+  display: none;
+  width: 30%;
+}
+
+#highRow {
+  padding: 10px;
+}
+
+#theTottaly {
+  color: #fff200;
+}
+
+#header {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
