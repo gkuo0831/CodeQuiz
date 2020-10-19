@@ -28,7 +28,7 @@ var startButton = document.getElementById("startQuiz");
 var cardQuestions = document.getElementById("questionsCard");
 var displayJumbo = document.querySelector(".jumbotron");
 
-startBtn.addEventListener("click", startQuiz);
+startButton.addEventListener("click", startQuiz);
 function startQuiz() {
   setTime();
   firstQuestion();
@@ -52,10 +52,10 @@ var currentQuestion = 0;
 function firstQuestion() {
   var quest = questions[currentQuestion];
   question.textContent = quest.question;
-  correctAnsw1.textContent = quest.correctAnsw1;
-  correctAnsw2.textContent = quest.correctAnsw2;
-  correctAnsw3.textContent = quest.correctAnsw3;
-  correctAnsw4.textContent = quest.correctAnsw4;
+  Answ1.textContent = quest.Answ1;
+  Answ2.textContent = quest.Answ2;
+  Answ3.textContent = quest.Answ3;
+  Answ4.textContent = quest.Answ4;
 }
 var quizBtn = document.querySelectorAll(".quizBtn");
 
