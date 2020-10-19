@@ -41,6 +41,14 @@ var yourScore = document.querySelector(".display");
 var submitButton = document.getElementById("buttonInitials");
 var inputLine = document.getElementById("inlineFormInput");
 
+var secondsLeft = 60;
+function setTime() {
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      console.log(secondsLeft);
+        time.textContent = "Time: " + secondsLeft;
+      
+
 //Creating start button
 var startButton = document.getElementById("startQuiz");
 var cardQuestions = document.getElementById("questionsCard");
