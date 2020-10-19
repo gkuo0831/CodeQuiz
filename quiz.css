@@ -18,3 +18,12 @@ body {
 #highScore {
   color: black;
 }
+
+.display {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.lead {
+  text-align: center;
+}
