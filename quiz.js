@@ -3,22 +3,22 @@
 var questionsContainer = [
   (question1 = {
     question: "What is the slowest animal in the world?",
-    correctAnsw: "Three-toed Sloth",
+    correctAnsw1: "Three-toed Sloth",
     answerArray: ["Three-toed Sloth", "Snail", "Tortoise", "Starfish"],
   }),
   (question2 = {
     question: "A group of lions is known as?",
-    correctAnsw: "A pride",
+    correctAnsw2: "A pride",
     answerArray: ["A swarm", "A group", "A gang", "A herd"],
   }),
   (question3 = {
     question: "Which animal never sleeps?",
-    correctAnsw: "Bullfrog",
+    correctAnsw3: "Bullfrog",
     answerArray: ["Fish", "Bullfrog", "Lizard", "Whale"],
   }),
   (question4 = {
     question: "Whats the fastest animal on earth?",
-    correctAnsw: "Cheetah",
+    correctAnsw4: "Cheetah",
     answerArray: ["Wolf", "Lepord", "Cheetah", "Usain Bolt"],
   }),
 ];
@@ -47,15 +47,17 @@ var question = document.getElementById("questions");
 var correctAnswer = document.getElementById("correct-Incorrect");
 var incorrectAnswer = document.getElementById("correct-Incorrect");
 
+var currentQuestion = 0;
 //question function:
 function firstQuestion() {
-  var quest = questions[runningQuestion];
+  var quest = questions[currentQuestion];
   question.textContent = quest.question;
-  answer1.textContent = quest.answer1;
-  answer2.textContent = quest.answer2;
-  answer3.textContent = quest.answer3;
-  answer4.textContent = quest.answer4;
+  correctAnsw1.textContent = quest.correctAnsw1;
+  correctAnsw2.textContent = quest.correctAnsw2;
+  correctAnsw3.textContent = quest.correctAnsw3;
+  correctAnsw4.textContent = quest.correctAnsw4;
 }
+var quizBtn = document.querySelectorAll(".quizBtn");
 
 //same function for timer^
 //create variables for state of true or false
