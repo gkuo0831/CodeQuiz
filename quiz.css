@@ -9,3 +9,12 @@ body {
 #row2 {
   align-content: center;
 }
+
+.col-3 {
+  color: black;
+  text-align: center;
+}
+
+#highScore {
+  color: black;
+}
