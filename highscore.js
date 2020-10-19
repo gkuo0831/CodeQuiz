@@ -5,3 +5,7 @@ var clearHighScore = document.getElementById("clearScores");
 console.log(highscores);
 console.log(highScorePrint);
 console.log(clearHighScore);
+
+window.addEventListener("load", function () {
+  printHighScore();
+});
