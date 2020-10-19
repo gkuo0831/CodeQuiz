@@ -97,10 +97,10 @@ var currentQuestion = 0;
 function firstQuestion() {
   var quest = questions[currentQuestion];
   question.textContent = quest.question;
-  Answ1.textContent = quest.Answ1;
-  Answ2.textContent = quest.Answ2;
-  Answ3.textContent = quest.Answ3;
-  Answ4.textContent = quest.Answ4;
+  answer1.textContent = quest.answer1;
+  answer2.textContent = quest.answer2;
+  answer3.textContent = quest.answer3;
+  answer4.textContent = quest.answer4;
 }
 var quizBtn = document.querySelectorAll(".quizBtn");
 
