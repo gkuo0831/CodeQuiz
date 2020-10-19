@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: pink;
 }
 
 #row1 {
@@ -26,4 +26,30 @@ body {
 
 .lead {
   text-align: center;
+}
+
+.jumbotron {
+  background-color: navy;
+  height: 270px;
+}
+
+.buttonRow {
+  justify-content: center;
+  padding: 5px;
+}
+
+.card {
+  background-color: navy;
+}
+
+.col-4 {
+  text-align: -webkit-center;
+}
+
+#questionsCard {
+  display: none;
+}
+
+#correctIncorrect {
+  font-size: xx-large;
 }
