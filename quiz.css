@@ -1,1 +1,11 @@
+body {
+  background-color: lightblue;
+}
 
+#row1 {
+  padding: 10px;
+}
+
+#row2 {
+  align-content: center;
+}
