@@ -4,22 +4,34 @@ var questionsContainer = [
   (question1 = {
     question: "What is the slowest animal in the world?",
     correctAnsw1: "Three-toed Sloth",
-    answerArray: ["Three-toed Sloth", "Snail", "Tortoise", "Starfish"],
+    answer1: "Three-toes Sloth",
+    answer2: "Snail",
+    answer3: "Tortoise",
+    answer4: "Starfish",
   }),
   (question2 = {
     question: "A group of lions is known as?",
     correctAnsw2: "A pride",
-    answerArray: ["A swarm", "A group", "A gang", "A herd"],
+    answer1: "A swarm",
+    answer2: "A group",
+    answer3: "A gang";
+    answer4: "a herd"
   }),
   (question3 = {
     question: "Which animal never sleeps?",
     correctAnsw3: "Bullfrog",
-    answerArray: ["Fish", "Bullfrog", "Lizard", "Whale"],
+    answer1: "Fish",
+    answer2: "Bullfrog",
+    answer3: "Lizard",
+    answer4: "Whale"
   }),
   (question4 = {
     question: "Whats the fastest animal on earth?",
     correctAnsw4: "Cheetah",
-    answerArray: ["Wolf", "Lepord", "Cheetah", "Usain Bolt"],
+    answer1: "Wolf",
+    answer2: "Lepord",
+    answer3: "Cheetah",
+    answer4: "Usain Bolt"
   }),
 ];
 
