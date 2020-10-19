@@ -9,3 +9,6 @@ console.log(clearHighScore);
 window.addEventListener("load", function () {
   printHighScore();
 });
+
+function printHighScore() {
+    highscores = scoresSorted(highscores, 'score');
