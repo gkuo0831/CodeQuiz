@@ -1,38 +1,38 @@
 // define functions:
 
-var questionsContainer = [
-  (question1 = {
+var questions = [
+  {
     question: "What is the slowest animal in the world?",
     correctAnsw: "Three-toed Sloth",
     answer1: "Three-toes Sloth",
     answer2: "Snail",
     answer3: "Tortoise",
     answer4: "Starfish",
-  }),
-  (question2 = {
+  },
+  {
     question: "A group of lions is known as?",
     correctAnsw: "A pride",
     answer1: "A swarm",
     answer2: "A group",
     answer3: "A gang",
     answer4: "a herd",
-  }),
-  (question3 = {
+  },
+  {
     question: "Which animal never sleeps?",
     correctAnsw: "Bullfrog",
     answer1: "Fish",
     answer2: "Bullfrog",
     answer3: "Lizard",
     answer4: "Whale",
-  }),
-  (question4 = {
+  },
+  {
     question: "Whats the fastest animal on earth?",
     correctAnsw: "Cheetah",
     answer1: "Wolf",
     answer2: "Lepord",
     answer3: "Cheetah",
     answer4: "Usain Bolt",
-  }),
+  },
 ];
 
 //timer
